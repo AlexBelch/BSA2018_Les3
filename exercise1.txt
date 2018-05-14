@@ -1,0 +1,4 @@
+﻿> db.Les3.aggregate({"$group": {"_id": null, "avgAge": {$avg: "$age"}}});
+
+Результат выполнения:
+{ "_id" : null, "avgAge" : 30.38862559241706 }
