@@ -1,0 +1,12 @@
+﻿
+> db.Les3.find({'favoriteFruit' : 'apple'}, 
+	       {name: 1, registered: 1, favoriteFruit: 1}).sort({"registered": 1}).limit(1).pretty();
+
+Результат выполнения:
+
+{
+        "_id" : ObjectId("5adf3c1544abaca147cdd568"),
+        "name" : "Magdalena Compton",
+        "registered" : "2014-01-02T10:16:56 -02:00",
+        "favoriteFruit" : "apple"
+}
