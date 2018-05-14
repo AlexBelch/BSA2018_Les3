@@ -1,0 +1,6 @@
+﻿>mongoimport --db BSA --collection Les3 --file users.json
+
+Результат выполнения:
+
+2018-05-14T17:28:48.366+0300    connected to: localhost
+2018-05-14T17:28:48.523+0300    imported 844 documents
