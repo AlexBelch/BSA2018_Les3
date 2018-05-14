@@ -1,0 +1,15 @@
+﻿> db.Les3.aggregate(      
+	{$skip : Math.ceil((30.38862559241706+31.5)/2) },
+   	{$unwind: '$friends'},
+	{$match: {"friends.name": /^Dennis/}},      
+	{$project: {name: 1, age: 1, address:1, friends: "$friends.name"}}).pretty();
+
+Результат выполнения:
+
+{
+        "_id" : ObjectId("5adf3c1544abaca147cdd539"),
+        "age" : 36,
+        "name" : "Keller Nixon",
+        "address" : "591 Jamison Lane, Idamay, Minnesota, 3128",
+        "friends" : "Dennis Randolph"
+}
