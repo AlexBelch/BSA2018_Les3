@@ -1,0 +1,5 @@
+﻿> db.Les3.remove({'favoriteFruit': 'strawberry'});
+
+Результат выполнения:
+
+WriteResult({ "nRemoved" : 253 })
