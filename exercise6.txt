@@ -1,0 +1,17 @@
+﻿> db.Les3.update({"_id": ObjectId("5adf3c1544abaca147cdd568")}, 
+                {$set: {features: 'first apple eater'}},{multi: false});
+
+Результат выполнения:
+
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+
+Просмотр изменений:
+> db.Les3.find({"_id": ObjectId("5adf3c1544abaca147cdd568")}, 
+               {name: 1, registered: 1, favoriteFruit: 1, features:1}).pretty();
+{
+        "_id" : ObjectId("5adf3c1544abaca147cdd568"),
+        "name" : "Magdalena Compton",
+        "registered" : "2014-01-02T10:16:56 -02:00",
+        "favoriteFruit" : "apple",
+        "features" : "first apple eater"
+}
